@@ -1,0 +1,35 @@
+
+
+HTML style 
+	<h1><fort color="red"> The quick brown fox</font></h1>
+this methon is outdated and does not use CSS to style the html
+
+1. CSS in the same html block  (Inline)
+	<h1 style="color:red;"> the quick brown fox</h1>
+
+2. Separate the style block to its own area in an HTML document eg. (block)
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			h1{color:red;}
+		</style>
+	</head>
+	<body>
+		<h1>The Quick Brown Fox</h1>
+	</body>
+</html>
+
+3. Style from External CSS file
+	<link href-"path/to/file.css">
+this line tells the html file where to find the CSS file.
+*best practice is to use an external style CSS File for style.
+
+3Primary Methods to style HTML
+	1. Inline: css to a specific html element using the style parameter
+		<p style=color:red">
+	2. Style Block css globally by colleting it together using a <style> block
+		
+	3. retrieve css from an external URL using directives like this	
+		<link rel="sheet" type="text/css" href="theme.css">
+		
