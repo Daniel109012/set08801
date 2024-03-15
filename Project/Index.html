@@ -3,9 +3,9 @@
     <head>
       <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" href="Source/Index.css" type="text/css"/> <!--Link to CSS Index file-->
         <link rel="icon" type="image/x-icon" href="Source/TabXicon.jpg"/> <!--Icon for Website Tab-->
+        <script type="text/javascript" src="Source/index.js"> </script> <!--link JS Index file-->
         <title>Index</title> 
     </head>
 
@@ -16,20 +16,17 @@
             <img src="/Source/Header/HeaderHome.png" Class="HeaderIMG" alt="header">
             </div>
         </header>
- 
+
         <div class="Top_Nav" id="myTop_Nav">
+                <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="MobileDropDown()">&#9776;</a>
                 <a href="javascript:void(0)" class="active" >Home</a>
                 <a href="javascript:void(0)">Page_1</a>
                 <a href="javascript:void(0)">Page_2</a>
                 <a href="javascript:void(0)">Mini Game</a>
-                <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="MobileDropDown()">&#9776; 
-                  <i class="fa fa-bars"></i>
-                  
-                </a>   
-                
+                <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="MobileDropDown()">&#9776;</a>
         </div> 
-
-<div id="overlay">       
+      
+       
         <div class="Left_Nav" >
           <a href="#home" class="activeleft" >Home</a>
           <a href="page_1#">Page_1</a>
@@ -49,35 +46,6 @@
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         </div>
 
-  <div >
-          <div id="burger" onclick="MobileDropDown()" onclick="closeNav()">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-          </div>
 
-  </div> 
-
-
-<!--creating the button to handle opening the navbar-->
-
-
-<!-- this would work as the backdrop when navbar is open-->
-<!-- Closes the navigation by clicking on the window-->
-<div class="backdrop-container" id="backdrop" onclick="closeNav()"></div>
-<div id="nav" >
-<!--the would be the drawer and it's content-->
-<div id="mySidenav" class="sidenav-container" onclick="closeNav()">
-<!--Each links on the navbar-->
-
-    <a href="#home" onclick="closeNav()" id="home-link">Home</a>
-    <a href="#about" onclick="closeNav()" id="about-link">About Me</a>
-    <a href="#works" onclick="closeNav()" id="works-link">My WorkS</a>
-    <a href="#contact" onclick="closeNav()" id="contact-link">Contact Me</a>
-  </div>
-</div>
-</div>
-
-<script type="text/javascript" src="Source/index.js"> </script> <!--link JS Index file-->
     </body>
 </html>
