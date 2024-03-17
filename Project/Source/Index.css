@@ -15,6 +15,7 @@ body {
 
 
 /* ---------------------Header--------------------------*/
+
 .HeaderIMG {
       padding: 1px;
       width: 100%;
@@ -32,6 +33,8 @@ body {
       transform: scale(1.2);
 
 }
+
+
 
 /*-------------Top Navigation Bar -------------------------------*/
 
@@ -86,6 +89,7 @@ div.Left_Nav a{
   font-size: 20px;
   color: #ffffff;
   display: block;
+  font-size: 1rem;
 }
 
 div.Left_Nav a:hover {
@@ -114,7 +118,6 @@ div.Main {
     height: 100%;
   }
 
-  
   body {
       margin:0;
       background: linear-gradient(90deg, #9c08a3 0%, #4c0ca5 42%, #00e4ff 100%);
@@ -128,16 +131,14 @@ div.Main {
     height: auto;
 }
 
-.HeaderHome{
-transition: transform .2s;
-padding-top: 0px;
-} 
+header{
+    width: 100%;
+    height: auto;
+    display:flex;
+}
 
 .HeaderHome:hover{
-    -ms-transform: scale(.98);
-    -webkit-transform:scale(.98);
-    transform: scale(.98);
-
+  transform: none;
 }
 
 /*-------------Top Navigation Bar -------------------------------*/
@@ -157,12 +158,8 @@ padding-top: 0px;
   font-size: 1rem;
 }
 
-.Top_Nav a:hover {
-  background-color: #00063d;
-}
-
 .Top_Nav a.active {
-  background: #00e4ff;
+  background: #0a2777;
   color: #ffffff;
 }
 
@@ -174,7 +171,8 @@ div.Left_Nav {
   background-color: #6e6dc7;
   overflow-x: hidden;
   padding-top: 30px;
-  width: 150px;
+  width: 140px;
+  position:absolute ;
   height: 70%
 
 }
@@ -185,11 +183,9 @@ div.Left_Nav a{
   font-size: 20px;
   color: #ffffff;
   display: block;
+  font-size: 1rem;
 }
 
-div.Left_Nav a:hover {
-  background-color: #00063d;
-}
 /*       --------------------------------------*/
 
 div.Main {
