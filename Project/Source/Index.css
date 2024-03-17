@@ -173,7 +173,7 @@ div.Left_Nav {
   background-color: #6e6dc7;
   overflow-x: hidden;
   padding-top: 30px;
-  width: 140px;
+  width: 25%;
   position:absolute ;
   height: 70%
 
@@ -193,7 +193,7 @@ div.Left_Nav a{
 div.Main {
   float: left;
   overflow-y: auto;
-  margin-left: 150px; /* Same as the width of the sidenav */
+  margin-left: 25%; /* Same as the width of the sidenav */
   font-size: 1em; /* Increased text to enable scrolling */
   padding: 15px 25px;
   background-color: #f7f7f7;
