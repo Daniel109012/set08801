@@ -42,7 +42,7 @@ body {
     background-color: #1a0d5f;
     position:relative; 
     width: 100%;
-    text-align: Center;
+    text-align: left;
 
 }
 
@@ -123,6 +123,9 @@ div.Main {
       height: 100%;
       padding: 0;
   }
+
+
+  /*----------------------------------------------*/
 
 .HeaderIMG {
     padding: 0px;
