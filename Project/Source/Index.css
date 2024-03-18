@@ -269,12 +269,12 @@ nav{
 }
 
 .sidenav-container .closebtn {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color:#C9002B ;
   cursor: pointer;
-  margin-right: 2rem;
-  margin-left:3rem;
+  margin-right: 1rem;
+  margin-left:1rem;
 } 
 
 .sidenav-container .drawer-close-button{
