@@ -208,7 +208,7 @@ div.sidenav a{
   position: fixed;
   z-index: 2; 
   left: 0;
-  top: 0;
+  
   width: 100%; 
   height: 100%; 
   overflow: auto; 
@@ -244,7 +244,7 @@ nav{
   width: 0;
   position: fixed;
   z-index: 3;
-  top: 0;
+  
   left: 0;
   background-color: #111;
   overflow-x: hidden;
