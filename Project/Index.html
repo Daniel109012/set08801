@@ -20,7 +20,7 @@
         </header>
 
         <div class="Top_Nav" id="myTop_Nav">
-                <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="MobileDropDown()">&#9776;</a>
+                <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="openNav()">&#9776;</a>
                 <a href="javascript:void(0)" class="active" >Home</a>
                 <a href="Content.html">Content</a>
                 <a href="javascript:void(0)">Page_2</a>
@@ -39,12 +39,12 @@
 
                   <!--------------------------------------------------->
        
-        <div id="mySidenav" class="sidenav-container">
-
+        <div id="mySidenav" class="sidenav-container" onclick="closeNav()">
+          <!--
           <span class="drawer-close-button">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           </span>
-        
+        -->
           <a href="#home" onclick="closeNav()" id="home-link">Home</a>
           <a href="#about" onclick="closeNav()" id="about-link">About Me</a>
           <a href="#works" onclick="closeNav()" id="works-link">My WorkS</a>
@@ -55,10 +55,10 @@
         
         <div class="backdrop-container" id="backdrop"></div>
         
-        
+        <!--
         <nav>
                 <span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
-        </nav>
+        </nav>-->
 
       </div>
         <!--------------------------------------------------->
