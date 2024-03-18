@@ -71,7 +71,7 @@ body {
 /*----------------Side Navigation Bar-----------------------*/
 
 
-div.Left_Nav { 
+div.sidenav { 
   position:absolute;
   background-color: #6e6dc7;
   overflow-x: hidden;
@@ -82,7 +82,7 @@ div.Left_Nav {
 
 }
 
-div.Left_Nav a{  
+div.sidenav a{  
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -91,7 +91,7 @@ div.Left_Nav a{
   font-size: 1rem;
 }
 
-div.Left_Nav a:hover {
+div.sidenav a:hover {
   background-color: #00063d;
 }
 
@@ -177,8 +177,8 @@ header{
 
 /*----------------Side Navigation Bar-----------------------*/
 
-
-div.Left_Nav { 
+/*
+div.sidenav { 
   position:absolute;
   background-color: #6e6dc7;
   overflow-x: hidden;
@@ -188,14 +188,14 @@ div.Left_Nav {
   height: 70%;
 }
 
-div.Left_Nav a{  
+div.sidenav a{  
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
   color: #ffffff;
   display: block;
   font-size: 1rem;
-}
+}*/
 
 .sidenav{
   display: none;
@@ -291,7 +291,7 @@ nav{
 div.Main {
   float: left;
   overflow-y: auto;
-  margin-left: 25%; /* Same as the width of the sidenav */
+  margin-left: 0%; /* Same as the width of the sidenav */
   font-size: 1em; /* Increased text to enable scrolling */
   padding: 15px 25px;
   background-color: #f7f7f7;
