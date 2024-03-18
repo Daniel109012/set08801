@@ -273,8 +273,7 @@ nav{
   font-weight: 700;
   color:#C9002B ;
   cursor: pointer;
-  margin-right: 1rem;
-  margin-left:1rem;
+  margin-left: 12px;
 } 
 
 .sidenav-container .drawer-close-button{
