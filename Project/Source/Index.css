@@ -225,7 +225,7 @@ nav{
   background-color: rgb(172, 209, 243);
   z-index: 1;
   margin-left: 6px;
-  margin-top: 10px;
+  margin-top: 12px;
   background-color: transparent;
 }
 
@@ -238,7 +238,6 @@ nav{
   padding-top:2px;
   padding-bottom: 2px;
   display: flex;
-  border:#00e4ff;
   font-weight: 700;
 }
 
