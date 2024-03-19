@@ -226,6 +226,7 @@ nav{
   z-index: 1;
   margin-left: 6px;
   margin-top: 10px;
+  background-color: transparent;
 }
 
 .mobile-nav-open-icon{
