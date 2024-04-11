@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+            Main_Home
+
+    </title>
+    <style>
+            body{background-color: rgb(54, 53, 53);}
+            h1{color: rgb(251, 255, 255);
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;}
+            p{color: rgb(243, 243, 243);
+            text-align: left;
+            font-family: "Times New Roman", Times, serif;
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+
+ * {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  transition: transform .5s;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+    }
+
+.clearfix {
+    text-align: center;
+   
+    }
+
+    .img-container:hover{
+      -ms-transform: scale(1.2);
+      -webkit-transform:scale(1.2);
+      transform: scale(1.2);
+}
+
+     </style> 
+     </head>
+    <body>
+
+        <h1>
+            Exercise
+        </h3>
+        <p>We will be Going over Exersices which deal mosty with strength training (Weight Training), Cardiovascular traing (Endurance) and Calistenics wich is also a form of Strength training but uses mostly body waight. </p>
+        <p>  Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.
+            Adults who sit less and do any amount of moderate-to-vigorous physical activity gain some health benefits. Only a few lifestyle choices have as large an impact on your health as physical activity.
+            Everyone can experience the health benefits of physical activity – age, abilities, ethnicity, shape, or size do not matter.
+        </p>
+
+<div class="clearfix">
+  <div class="img-container">
+    <p>Waight Lifting</p>
+  <img src="Source\Weight_training.jpeg" alt="Waight Lifting" style="width:100%; object-fit: cover;">
+  </div>
+  <div class="img-container">
+    <p>Cardio</p>
+  <img src="Source\Cardio.jpg" alt="Cardio" style="width:100%; object-fit: cover;">
+  </div>
+  <div class="img-container">
+    <p>Calistenics</p>
+  <img src="Source\calisthenics.jpg" alt="Calistenics" style="width:100%; object-fit: cover;">
+  </div>
+</div>
+    </body>
+</html>
