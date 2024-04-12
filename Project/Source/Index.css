@@ -68,6 +68,11 @@ body {
     background-color: #0b025a;
   }
 
+  .Top_Nav .home {
+      float: right;
+      padding-right: 30px;
+  }
+
 /*----------------Side Navigation Bar-----------------------*/
 
 
