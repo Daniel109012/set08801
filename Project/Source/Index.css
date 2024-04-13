@@ -1,8 +1,5 @@
 
 
-html{
-  height: 100%;
-}
 
 body {
     margin:0;
@@ -26,23 +23,6 @@ body {
   * {
     box-sizing: border-box;
   }
-
-
-/*   --------------------Main---------------------------*/
-.main .row:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-.main .column-66 {
-  float: left;
-  padding: 20px;
-}
-
-.main .column-33 {
-  float: left;
-}
 
 
 /* ---------------------Header--------------------------*/
@@ -75,6 +55,7 @@ body {
     width: 100%;
     text-align: left;
 
+
 }
 
 .Top_Nav a {
@@ -83,7 +64,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
  }
   
 .Top_Nav a:hover {
@@ -93,7 +74,7 @@ body {
 .Top_Nav a.active {
     background: #092086;
     color: #ffffff;
-    width: 147px;
+    width: 180px;
   }
 
   .Top_Nav a.active:hover{
@@ -160,9 +141,6 @@ div.Main {
 
 @media screen and (max-width: 600px) {
 
-  html{
-    height: 100%;
-  }
 
   body {
       margin:0;
@@ -170,7 +148,6 @@ div.Main {
       height: 100%;
       padding: 0;
   }
-
 
   /*----------------------------------------------*/
 
@@ -213,26 +190,6 @@ header{
 }
 
 /*----------------Side Navigation Bar-----------------------*/
-
-/*
-div.sidenav { 
-  position:absolute;
-  background-color: #6e6dc7;
-  overflow-x: hidden;
-  padding-top: 30px;
-  width: 25%;
-  position:absolute ;
-  height: 70%;
-}
-
-div.sidenav a{  
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #ffffff;
-  display: block;
-  font-size: 1rem;
-}*/
 
 .sidenav{
   display: none;
