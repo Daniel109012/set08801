@@ -27,14 +27,9 @@ body {
 
 .column-33 {
   float: left;
-  padding: 20px;
 }
 
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
+
 /* ---------------------Header--------------------------*/
 
 .HeaderIMG {
@@ -325,13 +320,14 @@ div.Main {
 
 }
 
-  .column-66,
-  .column-33 {
+  .column-66{
     width: 100%;
     text-align: center;
   }
-  img {
-    margin: auto;
+
+  .column-33 {
+    text-align: center;
+    width:100%; object-fit: cover;
   }
 
 }
