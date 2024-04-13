@@ -25,18 +25,18 @@ body {
 
 
 /*   --------------------Main---------------------------*/
-.row:after {
+.main .row:after {
   content: "";
   display: table;
   clear: both
 }
 
-.column-66 {
+.main .column-66 {
   float: left;
   padding: 20px;
 }
 
-.column-33 {
+.main .column-33 {
   float: left;
 }
 
