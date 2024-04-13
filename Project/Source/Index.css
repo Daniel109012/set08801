@@ -13,7 +13,28 @@ body {
 }
 
 
+/*   --------------------Main---------------------------*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
 
+.column-66 {
+  float: left;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 /* ---------------------Header--------------------------*/
 
 .HeaderIMG {
@@ -303,6 +324,15 @@ div.Main {
   height: 70%;
 
 }
+
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
 
 }
 
