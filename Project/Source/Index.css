@@ -6,19 +6,8 @@ body {
     background: linear-gradient(90deg, #9c08a3 0%, #4c0ca5 42%, #00e4ff 100%);
     padding-left: 10%;
     padding-right:10%;
-    height: 100%;
+    
 }
-
-.main h1{
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;}
-.main p{
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  padding-left: 20px;
-  padding-right: 20px;
-  }
 
   * {
     box-sizing: border-box;
@@ -48,17 +37,14 @@ body {
 
 /*-------------Top Navigation Bar -------------------------------*/
 
-.Top_Nav {
-    overflow: hidden;
+div.Top_Nav {
     background-color: #1a0d5f;
-    position:relative; 
-    width: 100%;
-    text-align: left;
-
+    overflow: auto;
+    white-space: nowrap;
 
 }
 
-.Top_Nav a {
+div.Top_Nav a {
     display: inline-block;
     color: #ffffff;
     text-align: center;
@@ -95,8 +81,7 @@ div.sidenav {
   overflow-x: hidden;
   padding-top: 30px;
   width: 180px;
-  position:absolute ;
-  height: 70%
+  height: 70vh;
 
 }
 
@@ -123,18 +108,27 @@ div.sidenav a:hover {
 
 /* https://stackoverflow.com/questions/36847545/make-just-one-section-scrollable-not-the-entire-page */
 
-div.Main {
+.Main {
   float: left;
   overflow-y: auto;
   margin-left: 180px; /* Same as the width of the sidenav */
   font-size: 1em; /* Increased text to enable scrolling */
   padding: 15px 25px;
   background-color: #f7f7f7;
-  height: 70%;
-
+  height: 70vh;
 }
 
-
+.main h1{
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+.main p{
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
 
 
 /*------Mobile Screen------------------------------*/
@@ -145,7 +139,6 @@ div.Main {
   body {
       margin:0;
       background: linear-gradient(90deg, #9c08a3 0%, #4c0ca5 42%, #00e4ff 100%);
-      height: 100%;
       padding: 0;
   }
 
@@ -169,13 +162,14 @@ header{
 
 /*-------------Top Navigation Bar -------------------------------*/
 
-.Top_Nav {
+div.Top_Nav {
   background-color: #1a0d5f;
   overflow: Auto;
   white-space: nowrap;
 }
 
-.Top_Nav a {
+
+div.Top_Nav a {
   display: inline-block;
   color: #ffffff;
   text-align: center;
@@ -283,12 +277,11 @@ nav{
 
 div.Main {
   float: left;
-  overflow-y: auto;
   margin-left: 0%; /* Same as the width of the sidenav */
   font-size: 1em; /* Increased text to enable scrolling */
   padding: 15px 25px;
   background-color: #f7f7f7;
-  height: 70%;
+ 
 
 }
 
