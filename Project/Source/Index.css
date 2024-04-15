@@ -4,9 +4,10 @@
 body {
     margin:0;
     background: linear-gradient(90deg, #9c08a3 0%, #4c0ca5 42%, #00e4ff 100%);
-    padding-left: 10%;
-    padding-right:10%;
-    
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    overflow:auto
 }
 
   * {
@@ -17,23 +18,9 @@ body {
 /* ---------------------Header--------------------------*/
 
 .HeaderIMG {
-      padding: 1px;
       width: 100%;
       height: auto;
 }
-
-.HeaderHome{
-  transition: transform .5s;
-  padding-top: 20px;
-} 
-
-.HeaderHome:hover{
-      -ms-transform: scale(1.2);
-      -webkit-transform:scale(1.2);
-      transform: scale(1.2);
-}
-
-
 
 /*-------------Top Navigation Bar -------------------------------*/
 
@@ -41,6 +28,8 @@ div.Top_Nav {
     background-color: #1a0d5f;
     overflow: auto;
     white-space: nowrap;
+    position: sticky;
+    margin-top: -90px;
 
 }
 
@@ -67,10 +56,6 @@ div.Top_Nav a {
     background-color: #0b025a;
   }
 
-  .Top_Nav .home {
-      float: right;
-      padding-right: 30px;
-  }
 
 /*----------------Side Navigation Bar-----------------------*/
 
@@ -81,7 +66,7 @@ div.sidenav {
   overflow-x: hidden;
   padding-top: 30px;
   width: 180px;
-  height: 70vh;
+  height: 80vh;
 
 }
 
@@ -109,13 +94,15 @@ div.sidenav a:hover {
 /* https://stackoverflow.com/questions/36847545/make-just-one-section-scrollable-not-the-entire-page */
 
 .Main {
+  height: 80vh;
   float: left;
   overflow-y: auto;
   margin-left: 180px; /* Same as the width of the sidenav */
   font-size: 1em; /* Increased text to enable scrolling */
   padding: 15px 25px;
   background-color: #f7f7f7;
-  height: 70vh;
+  position: relative;
+  background-position-y: absolute;
 }
 
 .main h1{
@@ -166,6 +153,7 @@ div.Top_Nav {
   background-color: #1a0d5f;
   overflow: Auto;
   white-space: nowrap;
+  margin-top: -20px;
 }
 
 
