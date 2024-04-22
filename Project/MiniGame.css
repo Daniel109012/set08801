@@ -1,0 +1,45 @@
+body {
+    background: url(BG.jpg);
+    background-size: cover;
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#board {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 238, 227);
+    border: 10px solid lightgray;
+}
+
+.card {
+    height: 120px;
+    width: 120px;
+    margin: 2.5px;
+
+}
+
+@font-face {
+    font-family: "SuperMario";
+    src: url("Font/SuperMario.woff2") format("woff2"),
+    url("Font/SuperMario.woff") format("woff")
+}
+
+.page-title {
+    color: black;
+    font-family: SuperMario, serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+}
+
+.errors {
+    position: relative;
+    right:200px;
+    bottom: 15px;
+}
+
