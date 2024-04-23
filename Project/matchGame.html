@@ -6,6 +6,13 @@
     </head>
     <body>
         <h1 class="page-title">Memory Match</h1>
+        <div class="overlay-text">Click to Start</div>
+        <div id="game-over-text" class="overlay-text">Game Over
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+        <div id="victory-text" class="overlay-text visible">VICTORY
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
         <div class="game-container">
             <div class="game-info-container">
                 <div class="game-info">
@@ -16,7 +23,7 @@
                 </div>
             </div>
             <div class="board">
-            <div class="card visible">
+            <div class="card">
                 <div class="card-back card-face">
                     <img class="back-block" 
                     src="Images/Question.jpg">
@@ -26,21 +33,156 @@
                     src="Images/Luigi.jpg">
                 </div>
             </div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Luigi.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Mario.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Mario.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Peach.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Peach.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Bowser.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Bowser.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Bomb.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Bomb.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Yoshi.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/Yoshi.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/GoldCoin.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/GoldCoin.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/DonkeyKong.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="back-block" 
+                    src="Images/Question.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="front-block" 
+                    src="Images/DonkeyKong.jpg">
+                </div>
+            </div>
             </div>
         </div>
 

@@ -52,7 +52,7 @@ body {
     grid-template-columns: repeat(4, auto);
     margin: 50px;
     justify-content: center;
-    
+    perspective: 500px;
 }
 .board {
     height: 490px;
@@ -72,6 +72,10 @@ body {
     margin: 2.5px;
 }
 
+.card:hover {
+    cursor: url("Images/BulletBill.cur"), auto;
+}
+
 .card-face {
     position: absolute;
     width: 100%;
@@ -81,6 +85,7 @@ body {
     align-items: center;
     overflow: hidden;
     backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
 }
 
 .card.visible .card-back {
@@ -89,6 +94,44 @@ body {
 
 .card.visible .card-front {
     transform: rotateY(0);
+}
+
+.card.matched .front-block {
+
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color:rgb(253, 220, 73);
+    font-family: SuperMario, serif;
+}
+
+.overlay-text-small {
+    font-size: .3em
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {background-color: rgba(0,0,0,0);
+    font-size:0;
+    }
+    to {
+        background-color: rgba(0,0,0,.8);
+        font-size:9em;
+    }
 }
 
 .card-back {
