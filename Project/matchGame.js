@@ -3,7 +3,7 @@ class AudioController {
         this.bgMusic = new Audio('Audio/BGmusic.wav');
         this.flipSound = new Audio('Audio/FlipCard.wav');
         this.matchSound = new Audio('Audio/Match.wav');
-        this.fasterSound = new Audio('Audio/Faster.mp3')
+        this.fasterSound = new Audio('Audio/Faster.wav')
         this.victorySound = new Audio('Audio/Victory.wav');
         this.gameOverSound =  new Audio('Audio/GameOver.wav');
         this.bgMusic.volume = 0.5;
