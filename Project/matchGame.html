@@ -2,15 +2,16 @@
 <html>
     <head>
         <link href="matchGame.css" rel="stylesheet">
+        <script src="matchGame.js" async></script>
         <title>Mem Match Game</title>
     </head>
     <body>
         <h1 class="page-title">Memory Match</h1>
-        <div class="overlay-text">Click to Start</div>
+        <div class="overlay-text visible">Click to Start</div>
         <div id="game-over-text" class="overlay-text">Game Over
             <span class="overlay-text-small">Click to Restart</span>
         </div>
-        <div id="victory-text" class="overlay-text visible">VICTORY
+        <div id="victory-text" class="overlay-text">VICTORY
             <span class="overlay-text-small">Click to Restart</span>
         </div>
         <div class="game-container">
@@ -182,9 +183,14 @@
                     <img class="front-block" 
                     src="Images/DonkeyKong.jpg">
                 </div>
+                
             </div>
+            
             </div>
+            
         </div>
-
+        <div class="home">
+            <button><a href="Index.html">Home</a></button>
+        </div>
     </body>
 </html>
