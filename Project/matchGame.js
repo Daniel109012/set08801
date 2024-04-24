@@ -55,7 +55,7 @@ class MatchGame {
         this.busy = true;
         setTimeout(() => {
             this.audioController.startMusic();
-            this.shuffleCards();
+            this.shuffleCards(this.cardsArray);
             this.countDown = this.startCountDown();
             this.showCard();
             this.busy = false;
