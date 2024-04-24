@@ -1,6 +1,6 @@
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio('Audio/BGmusic.mp3');
+        this.bgMusic = new Audio('Audio/BGmusic.wav');
         this.flipSound = new Audio('Audio/FlipCard.wav');
         this.matchSound = new Audio('Audio/Match.wav');
         this.fasterSound = new Audio('Audio/Faster.mp3')
@@ -185,4 +185,3 @@ if(document.readyState === 'loading') {
     ready();
 }
 
-let audioController = new AudioController();
