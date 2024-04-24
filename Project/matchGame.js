@@ -3,6 +3,7 @@ class AudioController {
         this.bgMusic = new Audio('Audio/BGmusic.mp3');
         this.flipSound = new Audio('Audio/FlipCard.wav');
         this.matchSound = new Audio('Audio/Match.wav');
+        this.fasterSound = new Audio('Audio/Faster.mp3')
         this.victorySound = new Audio('Audio/Victory.wav');
         this.gameOverSound =  new Audio('Audio/GameOver.wav');
         this.bgMusic.volume = 0.5;
@@ -13,13 +14,19 @@ class AudioController {
     }
     stopMusic() {
         this.bgMusic.pause();
-        this.bgMusic.currentTime = 0;
+        this.fasterSound.pause();
+        this.bgMusic.currentTime = 20;
+        this.fasterSound.currentTime = 0;
     }
     flip() {
         this.flipSound.play();
     }
     match() {
         this.matchSound.play();
+    }
+    faster() {
+        this.stopMusic();
+        this.fasterSound.play();
     }
     victory() {
         this.stopMusic();
@@ -50,16 +57,26 @@ class MatchGame {
             this.audioController.startMusic();
             this.shuffleCards();
             this.countDown = this.startCountDown();
+            this.showCard();
+
             this.busy = false;
-        }, 500,);
+        },2000);
         this.hideCard();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+
+
     hideCard() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
             card.classList.remove('mached');
+        });
+    }
+
+    showCard() {
+        this.cardsArray.forEach(card => {
+            card.classList.add('visible');
         });
     }
 
@@ -99,7 +116,7 @@ class MatchGame {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
             this.busy =false;
-        }, 1000);
+        }, 500);
     }
 
     getCardType(card) {
@@ -110,10 +127,14 @@ class MatchGame {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 99)
+                this.hideCard();
+            if(this.timeRemaining === 20)
+                this.audioController.faster();
             if(this.timeRemaining === 0)
                 this.gameOver();
-        }, 1000);
-
+        },1000);
+            
     }
 
     gameOver() {
@@ -150,7 +171,7 @@ function ready() {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game.startGame();
-        });
+        },2000);
     });
     cards.forEach(card => {
         card.addEventListener('click', () => {

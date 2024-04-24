@@ -9,8 +9,8 @@
             body{
               background-color: rgb(54, 53, 53);
               margin:0;
-              padding-left: 10%;
-              padding-right:10%;
+              padding-left: 15%;
+              padding-right:15%;
               height: 100%;
               font-size: 1em;
                 }
@@ -18,13 +18,46 @@
             h1{color: rgb(251, 255, 255);
             text-align: center;
             font-family: "Times New Roman", Times, serif;
-            font-size: large;}
+            font-size: 3em;}
             p{color: rgb(243, 243, 243);
             text-align: left;
             font-family: "Times New Roman", Times, serif;
             padding-left: 20px;
             padding-right: 20px;
             }
+
+            /*-------------Top Navigation Bar -------------------------------*/
+
+div.Top_Nav {
+    background-color: #3e3b4e;
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+div.Top_Nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+ }
+  
+.Top_Nav a:hover {
+    background-color: #767bac;
+  }
+
+.Top_Nav a.active {
+    background: #949bbb;
+    color: #ffffff;
+    width: 180px;
+  }
+
+  .Top_Nav a.active:hover{
+    background-color: #8c89a5;
+  }
 
  * {
   box-sizing: border-box;
@@ -49,9 +82,9 @@
     }
 
     .img-container:hover{
-      -ms-transform: scale(1.2);
-      -webkit-transform:scale(1.2);
-      transform: scale(1.2);
+      -ms-transform: scale(.9);
+      -webkit-transform:scale(.9);
+      transform: scale(.9);
 }
 
 
@@ -72,7 +105,13 @@
      </style> 
      </head>
     <body>
-
+      <div class="Top_Nav" id="myTop_Nav">
+        <a href="javascript:void(0)" class="active">Home</a>
+        <a href="Calisthenics.html" >Calistenics</a>
+        <a href="Weight_Training.html">Weight Training</a>
+        <a href="Cardio.html">Cardio</a>
+        <a href="matchGame.html">Game</a>    
+    </div> 
         <h1>
             Exercise
         </h1>
