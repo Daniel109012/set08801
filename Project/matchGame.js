@@ -58,9 +58,8 @@ class MatchGame {
             this.shuffleCards();
             this.countDown = this.startCountDown();
             this.showCard();
-
             this.busy = false;
-        },2000);
+        },1000);
         this.hideCard();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
