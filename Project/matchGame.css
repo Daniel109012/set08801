@@ -145,7 +145,7 @@ button {
 }
 
 .card-front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
     display: flex;
     height: 110px;
     width: 110px;
