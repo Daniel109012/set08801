@@ -35,10 +35,7 @@ body {
     font-size: 6em;
 }
 
-button {
-    font-family: SuperMario, Serif;
-    font-size: 1.5em;
-}
+
 
 .game-info-container {
     grid-column: 1 / -1;
@@ -161,4 +158,16 @@ button {
     align-self: flex-start;  
     height: 110px;
     width: 110px;
+  }
+
+  button {
+    font-family: SuperMario, Serif;
+    font-size: 1.5em;
+}
+
+  .home {
+    left:50;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }

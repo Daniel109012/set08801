@@ -126,7 +126,7 @@ class MatchGame {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 99)
+            if(this.timeRemaining === 79)
                 this.hideCard();
             if(this.timeRemaining === 20)
                 this.audioController.faster();
@@ -164,7 +164,7 @@ class MatchGame {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MatchGame(100, cards);
+    let game = new MatchGame(80, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
